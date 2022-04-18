@@ -7,7 +7,7 @@ const app = express()
 app.use(cors())
 
 var corsOptions = {
-    origin: 'http://localhost:3001',
+    origin: 'http://localhost:3000',
     optionsSuccessStatus: 200
   }
 
@@ -16,7 +16,7 @@ app.use(
     express.urlencoded({
         extended: true
     }),
-    cors(corsOptions)
+    cors(corsOptions),
 )
 
 app.use(express.json())
@@ -37,6 +37,6 @@ mongoose
     .connect('mongodb://localhost')
     .then(() => {
         console.log("Conectamos ao MongoDB")
-        app.listen(3000)
+        app.listen(3001)
     })
     .catch((err) => console.log(err))
