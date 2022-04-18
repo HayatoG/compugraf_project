@@ -8,5 +8,5 @@
 - Entre nas pastas "compugraf-frontend" e "compugraf-backend";
 - Utilize o comando: __npm start__
 
-***O Back-end está rodando na porta 3001
-***O Front-end está rodando na porta 3000
+***O Back-end está rodando na porta 3001***
+***O Front-end está rodando na porta 3000***
